@@ -1,4 +1,4 @@
-
+Wes O.- Spring 2016
 Lab - Navigating the File System
 ==========
 Follow the instructions line-by-line.  
@@ -11,27 +11,27 @@ Follow the instructions line-by-line.
 ==========
 1. Open a new terminal window.
 ----------
-
+No output
 ==========
-2. Create a directory called mtec1002.
+2. Create a directory called mtec1003.
 ----------
-
+No output
 ==========
-3. Change your directory so that you're in mtec1002.
+3. Change your directory so that you're in mtec1003.
 ----------
-
+No output
 ==========
 4. Type:
 
 $ pwd
 
-Check that the output ends with mtec1002 (something like this: /Users/joe/mtec1002).
+Check that the output ends with mtec1003 (something like this: /Users/bree/mtec1003).
 
-If it doesn't start at #1 again, or ask for help before moving on!
+If it doesn't, start at #1 again, or ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
-
+/Users/WesMan/mtec1003
 
 
 ==========
@@ -42,7 +42,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+animals
 
 
 ==========
@@ -53,7 +53,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+animals	food
 
 
 ==========
@@ -64,7 +64,7 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
+animals	foo	food
 
 
 ==========
@@ -75,7 +75,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/Users/WesMan/mtec1003/foo/bar/baz/quz
 
 
 ==========
@@ -86,7 +86,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/Users/WesMan/mtec1003/foo/bar
 
 
 ==========
@@ -97,7 +97,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/Users/WesMan/mtec1003/foo/bar/baz/quz
 
  
 ==========
@@ -108,7 +108,7 @@ $ pwd
 
 Copy and paste the output below.
 ----------
-
+/Users/WesMan/mtec1003
 
 
 ==========
@@ -120,7 +120,8 @@ $ ls -l
 
 Copy and paste the first two lines from the output into the space below.
 ----------
-
+foo
+food
 
 
 ==========
@@ -142,7 +143,7 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/Volumes
 
 
 ==========
@@ -153,77 +154,82 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
-
-
+-bash: cd: /unknown_folder: No such file or directory
+"BREAK"
+/Volumes
 ==========
-15. Type:
+16. Type:
 
-$ cd ~/mtec1002
+$ cd ~/mtec1003
 $ pwd
 
 Copy and paste the output into the space below.
 ----------
-
+/Users/WesMan/mtec1003
 
 
 ==========
-16. Type:
+17. Type:
 
 $ hostname
 
 Copy and paste the output into the space below.
 ----------
-
+new-host.home
 
 
 ==========
-17a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
+18a. Make sure you're back in your mtec1003, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
-
+pwd
 
 
 ==========
-17b. If you're not in the right directory, type the following command:
+18b. If you're not in the right directory, type the following command:
 
-cd ~/mtec1002
+cd ~/mtec1003
 
 Otherwise skip this question/step!
 ----------
-
+No output
 
 
 ==========
-18. Create the following directories, with each one inside each other.  The first one, pinapple, is the inner most:
+19. Create the following directories, with each one inside each other.  The first one, pineapple, is the inner most:
 
 pineapple
 orange
-strawbery
+strawberry
 lemon
 
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
-
+mkdir -p lemon/strawberry/orange/pineapple
 
 
 ==========
-19. Make another directory called aardvark.  
+20. Make another directory called aardvark.  
 
 Write the command you used to create the directory below:
 ----------
-
+mkdir aardvark
 
 
 ==========
-20. List the files and directories in the current directory using the long format.  
+21. List the files and directories in the current directory using the long format.  
 
 What is the modified date of the aardvark directory?
 ----------
+total 0
+drwxr-xr-x  2 Wes Man  staff   68  5 fév 19:39 aardvark
+drwxr-xr-x  3 Wes Man  staff  102  5 fév 19:18 foo
+drwxr-xr-x  2 Wes Man  staff   68  5 fév 19:17 food
+drwxr-xr-x  3 Wes Man  staff  102  5 fév 19:39 lemon
 
 
 
 ==========
-21. Make 3 directories nested within each other:
+22. Make 3 directories nested within each other:
 
 * foo should be the outermost directory
 * bar should be the inside foo
@@ -231,60 +237,61 @@ What is the modified date of the aardvark directory?
 
 What command did you use?
 ----------
-
+mkdir -p foo/bar/baz
 
 
 ==========
-22. Change your directory so that you're in the inner most directory (baz)
+23. Change your directory so that you're in the inner most directory (baz)
 
 What command did you use?
 ----------
-
+cd 
 
 
 ==========
-23. Change your directory so that you're two directories up (foo)
+24. Change your directory so that you're two directories up (foo)
 
 What command did you use?
 ----------
+cd ../..
+
+==========
+25. What command is used to delete empty directories?
+----------
+rmdir
 
 
 ==========
-24. What command is used to delete empty directories?
+26. What command is used to print out your current working directory?
 ----------
-
+pwd
 
 
 ==========
-25. What command is used to print out your current working directory?
+27. What flag do I pass to ls to print out all files?
 ----------
-
+-a
 
 
 ==========
-26. What flag do I pass to ls to print out all files?
+28. What's the shortcut for home directory?
 ----------
-
+tilde ~
 
 
 ==========
-27. What's the shortcut for home directory?
+29. What's a pathname?
 ----------
-
+unique location in a file system
 
 
 ==========
-28. What's a pathname?
+30. What's a directory?
 ----------
-
-
+system for organizing and to catalogue files 
+and directories
 
 ==========
-29. What's a directory?
+31. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
-
-
-
-==========
-30. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
-----------
+/Users/WesMan/Downloads
